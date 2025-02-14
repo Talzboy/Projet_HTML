@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+</head>
+<body style="background-color: #f0f0f0;">
+  <!-- Navbar -->
+  <header style="background-color: #333; color: white;">
+    <nav>
+      <ul style="list-style: none; display: flex; justify-content: space-around; padding: 0; margin: 0;">
+        <li><a href="#home" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="#about" style="color: white; text-decoration: none;">About</a></li>
+        <li><a href="#work" style="color: white; text-decoration: none;">Work</a></li>
+        <li><a href="#resume" style="color: white; text-decoration: none;">Resume</a></li>
+        <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sections -->
+  <main>
+    <!-- Home Section -->
+    <section id="home" style="background-color: #fff; color: #333; padding: 20px;">
+      <h1>Bienvenue sur mon portfolio</h1>
+      <p>Explorez mes projets et apprenez-en plus sur moi et mon parcours professionnel.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" style="background-color: #f9f9f9; color: #333; padding: 20px;">
+      <h2>About</h2>
+      <p>Je suis un développeur web passionné avec une expérience solide dans la création de sites web modernes et réactifs. Mon objectif est de créer des expériences utilisateur exceptionnelles grâce à des designs intuitifs et des fonctionnalités innovantes.</p>
+      <p>Avec une formation en informatique et plusieurs années d'expérience dans le domaine, j'ai travaillé sur divers projets allant de simples sites vitrines à des applications web complexes. En dehors du développement, j'aime partager mes connaissances avec la communauté et contribuer à des projets open source.</p>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" style="background-color: #fff; color: #333; padding: 20px;">
+      <h2>Work</h2>
+      <video width="320" height="240" controls>
+        <source src="montravail.mp4" type="video/mp4">
+      </video>
+      <ul>
+        <li><strong>Projet 1: Application de Gestion de Tâches</strong>
+          <p>Une application web conçue pour aider les utilisateurs à organiser leurs tâches quotidiennes. Les fonctionnalités incluent la création, la modification et la suppression de tâches, ainsi que la possibilité de les marquer comme terminées. L'application utilise une architecture RESTful avec une interface intuitive.</p>
+        </li>
+        <li><strong>Projet 2: Site E-commerce</strong>
+          <p>Un site e-commerce entièrement fonctionnel avec une interface utilisateur moderne. Les utilisateurs peuvent parcourir les produits, les ajouter au panier, et passer des commandes en ligne. Le site intègre un système de paiement sécurisé et un tableau de bord administratif pour gérer les commandes et les stocks.</p>
+        </li>
+        <li><strong>Projet 3: Blog Personnel</strong>
+          <p>Un blog personnel où je partage mes idées et expériences sur le développement web et les technologies émergentes. Le site est construit avec un système de gestion de contenu (CMS) personnalisé et permet aux visiteurs de laisser des commentaires et de s'abonner à ma newsletter.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" style="background-color: #f9f9f9; color: #333; padding: 20px;">
+      <h2>Resume</h2>
+      <p>Téléchargez mon <a href="resume.pdf" target="_blank">CV</a> pour en savoir plus sur mon parcours professionnel et mes compétences. Mon CV détaille mes expériences passées, mes qualifications et les projets sur lesquels j'ai travaillé.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background-color: #fff; color: #333; padding: 20px;">
+      <h2>Contact</h2>
+      <p>Vous avez des questions ou souhaitez discuter d'un projet ? N'hésitez pas à me contacter via le formulaire ci-dessous :</p>
+      <form action="submit_form.php" method="post">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer style="background-color: #333; color: white; text-align: center; padding: 10px;">
+    <p>&copy; 2025 Mon Portfolio</p>
+  </footer>
+</body>
+</html>
